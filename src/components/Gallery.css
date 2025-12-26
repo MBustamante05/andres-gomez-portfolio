@@ -1,0 +1,104 @@
+/* Estilos básicos para Swiper */
+.swiper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+    display: block;
+}
+
+/* Estilos específicos para la galería */
+.gallery-swiper {
+    width: 100% !important;
+    height: auto !important;
+    overflow: hidden !important;
+    max-width: 100% !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+}
+
+.gallery-swiper .swiper-wrapper {
+    display: flex !important;
+    align-items: flex-start !important;
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+.gallery-swiper .swiper-slide {
+    width: 300px !important;
+    min-width: 300px !important;
+    max-width: 300px !important;
+    flex-shrink: 0 !important;
+    opacity: 0.8 !important;
+    transition: opacity 0.3s ease !important;
+}
+
+.gallery-swiper .swiper-slide-active {
+    opacity: 1 !important;
+}
+
+.gallery-swiper .swiper-slide img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+.gallery-swiper {
+    cursor: grab !important;
+}
+
+.gallery-swiper:active {
+    cursor: grabbing !important;
+}
+
+/* Ocultar scrollbar */
+.gallery-swiper .swiper-wrapper::-webkit-scrollbar {
+    display: none !important;
+}
+
+.gallery-swiper .swiper-wrapper {
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+}
+
+/* Contenedor principal del carrusel */
+.gallery-swiper {
+    position: relative !important;
+    box-sizing: border-box !important;
+}
+
+/* Asegurar que el carrusel no se salga del contenedor */
+.gallery-swiper .swiper-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+}
+
+/* Contenedor del carrusel */
+.gallery-swiper {
+    contain: layout style paint !important;
+    isolation: isolate !important;
+}
+
+/* Asegurar que los slides no se salgan */
+.gallery-swiper .swiper-slide {
+    contain: layout style paint !important;
+}

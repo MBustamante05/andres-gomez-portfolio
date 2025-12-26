@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import "tailwindcss";
+
+.main-title {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.2rem;
+}
+
+/* Estilos responsive adicionales */
+@media (max-width: 640px) {
+    .main-title {
+        letter-spacing: 0.1rem;
+    }
+}
+
+/* Mejoras para el carrusel en móviles */
+@media (max-width: 768px) {
+    .gallery-swiper .swiper-slide {
+        width: 280px !important;
+    }
+}
+
+/* Asegurar que las imágenes se vean bien en todos los dispositivos */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Mejoras para el formulario en móviles */
+@media (max-width: 640px) {
+
+    input,
+    textarea {
+        font-size: 16px;
+        /* Evita zoom en iOS */
+    }
+}
+
+/* Ajustes para el navbar en móviles */
+@media (max-width: 1024px) {
+    .navbar-mobile-menu {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+}
