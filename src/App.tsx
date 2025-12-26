@@ -11,16 +11,16 @@ function App() {
   return (
     <div>
       <Navbar />
-      <section>
+      <section id="home">
         <Home />
       </section>
-      <section>
+      <section id="gallery">
         <Gallery />
       </section>
-      <section>
+      <section id="pricing">
         <Pricing />
       </section>
-      <section>
+      <section id="contact">
         <Contact />
       </section>
       <Footer />

@@ -24,7 +24,7 @@ export const Navbar = () => {
         <a href="#gallery" className={aStyle}>
           Gallery
         </a>
-        <a href="pricing" className={aStyle}>
+        <a href="#pricing" className={aStyle}>
           Pricing
         </a>
         <a href="#contact" className={aStyle}>
